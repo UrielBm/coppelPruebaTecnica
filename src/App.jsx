@@ -7,7 +7,7 @@ import CardAriculo from "./components/CardArticulo/CardAriculo";
 import Spinner from "./components/Spinner/Spinner";
 import imgSearch from "./assets/search.gif";
 import "./App.scss";
-
+import "animate.css";
 function App() {
   const { isVisibleArticulo, form, searcInputVisible, isLoad } =
     useContext(ArticuloContext);
@@ -21,7 +21,7 @@ function App() {
         <Form />
       ) : (
         !isVisibleArticulo && (
-          <div className="noFound">
+          <div className="noFound animate__animated animate__fadeIn">
             <p>Aún no se ha buscado ningun artículo</p>
             <img src={imgSearch} alt="search" className="media" />
           </div>
