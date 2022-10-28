@@ -1,0 +1,93 @@
+.form {
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+  max-width: 35rem;
+  margin: 0 auto;
+  .wrapperInput {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .label {
+      margin-bottom: 0.3rem;
+      font-weight: 800;
+      flex: 1;
+      @media (min-width: 768px) {
+        font-size: 1.3rem;
+      }
+    }
+    .input {
+      flex: 1;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--secondary);
+      width: 60%;
+      transition: width 0.5s ease;
+      max-width: 18rem;
+      outline: none;
+      &:focus {
+        animation: flash 0.3s ease;
+        animation-iteration-count: 2;
+      }
+      @media (min-width: 768px) {
+        width: 70%;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .wrapperInput--checkbox {
+    @extend .wrapperInput;
+    justify-content: flex-start;
+    label {
+      font-size: 1.2rem;
+      @media (min-width: 768px) {
+        font-size: 1.4rem;
+      }
+    }
+    .checkbox:checked + label {
+      color: red;
+      font-weight: bolder;
+    }
+  }
+  .wrapperButton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 0.5rem 0;
+    max-width: 22rem;
+    transition: background-color 0.6s ease;
+    &:hover {
+      cursor: pointer;
+      background-color: var(--primary);
+      color: var(--secondary);
+    }
+    @media (min-width: 768px) {
+      padding: 0.8rem 0;
+      font-size: 1.2rem;
+    }
+  }
+  .buttoncancelar {
+    @extend .button;
+    max-width: 8rem;
+    background-color: var(--danger);
+    color: var(--white);
+  }
+}
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}

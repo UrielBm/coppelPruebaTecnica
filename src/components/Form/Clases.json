@@ -1,0 +1,68 @@
+[
+    {
+        "id_departamento": 1,
+        "id": 1,
+        "numero": "01",
+        "nombre": "Comestibles"
+    },
+    {
+        "id_departamento": 1,
+        "id": 2,
+        "numero": "02",
+        "nombre": "Licuadoras"
+    },
+    {
+        "id_departamento": 1,
+        "id": 3,
+        "numero": "03",
+        "nombre": "Batidoras"
+    },
+    {
+        "id_departamento": 1,
+        "id": 4,
+        "numero": "04",
+        "nombre": "Cafeteras"
+    },
+    {
+        "id_departamento": 2,
+        "id": 5,
+        "numero": "01",
+        "nombre": "Amplificadores Car Audio"
+    },
+    {
+        "id_departamento": 2,
+        "id": 6,
+        "numero": "02",
+        "nombre": "Auto estereo"
+    },
+    {
+        "id_departamento": 3,
+        "id": 7,
+        "numero": "01",
+        "nombre": "Colchon"
+    },
+    {
+        "id_departamento": 3,
+        "id": 8,
+        "numero": "02",
+        "nombre": "Juego de box"
+    },
+    {
+        "id_departamento": 4,
+        "id": 9,
+        "numero": "01",
+        "nombre": "Salas"
+    },
+    {
+        "id_departamento": 4,
+        "id": 10,
+        "numero": "02",
+        "nombre": "Complemento para salas"
+    },
+    {
+        "id_departamento": 4,
+        "id": 11,
+        "numero": "03",
+        "nombre": "Sofa Cama"
+    }
+]
