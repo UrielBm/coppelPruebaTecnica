@@ -21,7 +21,7 @@ function App() {
         <Form />
       ) : (
         !isVisibleArticulo && (
-          <div className="noFound animate__animated animate__fadeIn">
+          <div className="noFound animate__fadeIn">
             <p>Aún no se ha buscado ningun artículo</p>
             <img src={imgSearch} alt="search" className="media" />
           </div>

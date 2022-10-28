@@ -9,7 +9,6 @@ import {
   SHOW_FORMREGISTER,
   SHOW_FORMUPDATE,
   UPDATE_ARTICULO,
-  DO_REGISTER,
   DO_CANCEL,
 } from "./../type";
 const ArticuloState = (props) => {
