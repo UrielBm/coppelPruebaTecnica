@@ -59,8 +59,10 @@
 }
 .lineArticulo {
   @extend .line;
-  top: -2rem;
-  left: -2rem;
+  top: 2rem;
+  left: -0.5rem;
+  width: 1rem;
+  height: 60%;
 }
 .lineHorizontal {
   @extend .line;

@@ -16,7 +16,6 @@ const CardAriculo = () => {
   return (
     <div className="articleCard animate__animated animate__backInLeft">
       <div className="lineArticulo" />
-      <div className="lineHorizontal" />
       <img src={Logo} className="logo" alt="logo" />
       <div className="wrapperData">
         <p className="type">
