@@ -188,7 +188,11 @@ const Form = () => {
           onChange={handleClaseChange}
           onBlur={formik.handleBlur}
         >
-          <option value="">--selecciona una--</option>
+          <option value="">
+            {form.type === "update" && stateClases.length === 0
+              ? articulo.clase.value
+              : "--selecciona una--"}
+          </option>
           {stateClases.map(({ id, nombre }) => (
             <option key={id} value={id}>
               {nombre}
@@ -216,7 +220,11 @@ const Form = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
         >
-          <option value="">--selecciona una--</option>
+          <option value="">
+            {form.type === "update" && stateFamilia.length === 0
+              ? articulo.familia.value
+              : "--selecciona una--"}
+          </option>
           {stateFamilia.map(({ id, nombre }) => (
             <option key={id} value={id}>
               {nombre}
