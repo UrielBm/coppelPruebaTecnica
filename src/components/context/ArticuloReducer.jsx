@@ -2,6 +2,7 @@ import {
   DO_CANCEL,
   DO_REGISTER,
   SEARCH_ARTICULO,
+  SET_ALLDATA,
   SHOW_FORMREGISTER,
   SHOW_FORMUPDATE,
   UPDATE_ARTICULO,
@@ -9,6 +10,11 @@ import {
 
 const ArticuloReducer = (state, action) => {
   switch (action.type) {
+    case SET_ALLDATA:
+      return {
+        ...state,
+        arrayArticulos: action.payload,
+      };
     case SEARCH_ARTICULO:
     case DO_REGISTER:
       return {

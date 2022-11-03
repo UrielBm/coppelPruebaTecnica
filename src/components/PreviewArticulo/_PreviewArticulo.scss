@@ -1,0 +1,51 @@
+.previewArticulo {
+  border: 3px solid var(--secondary);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 0.5rem;
+  .sku {
+    font-size: 0.85rem;
+    color: gray;
+    &::first-letter {
+      font-size: 0.9rem;
+      color: unset;
+    }
+    span {
+      font-weight: unset;
+    }
+  }
+  p {
+    margin-bottom: 0.5rem;
+    &::first-letter {
+      font-size: 1.4rem;
+      color: var(--primary);
+    }
+    span {
+      font-weight: lighter;
+      margin-left: 0.2rem;
+    }
+  }
+  .wrapperStock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .actionButton {
+    width: 50%;
+    padding: 0.5rem 0;
+    text-align: center;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--secondary);
+    color: var(--white);
+    max-width: 12rem;
+    &:hover {
+      cursor: pointer;
+      background-color: var(--primary);
+      color: var(--secondary);
+    }
+  }
+}

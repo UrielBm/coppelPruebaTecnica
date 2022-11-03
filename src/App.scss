@@ -4,6 +4,7 @@
 @use "./components/Form/Form";
 @use "./components/CardArticulo/CardArticulo";
 @use "./components/Spinner/Spinner";
+@use "./components/PreviewArticulo/PreviewArticulo";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;800&display=swap");
 
 .wrapper {
@@ -13,6 +14,13 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+}
+.wrapperPreview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
 }
 .noFound {
   text-align: center;

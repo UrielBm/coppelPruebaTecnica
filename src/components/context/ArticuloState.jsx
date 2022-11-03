@@ -10,6 +10,7 @@ import {
   SHOW_FORMUPDATE,
   UPDATE_ARTICULO,
   DO_CANCEL,
+  SET_ALLDATA,
 } from "./../type";
 const ArticuloState = (props) => {
   const initialState = {
@@ -27,6 +28,7 @@ const ArticuloState = (props) => {
       cantidad: "",
       descontinuado: false,
     },
+    arrayArticulos: [],
     isVisibleArticulo: false,
     searcInputVisible: true,
     form: { visible: false, type: null },
@@ -129,7 +131,15 @@ const ArticuloState = (props) => {
       }
     });
   };
-
+  const handleGetAllArticulos = async () => {
+    try {
+      const response = await BaseAxios.get(`/findall`);
+      dispatch({
+        type: SET_ALLDATA,
+        payload: response.data.articulos,
+      });
+    } catch (error) {}
+  };
   return (
     <ArticuloContext.Provider
       value={{
@@ -138,6 +148,7 @@ const ArticuloState = (props) => {
         isVisibleArticulo: state.isVisibleArticulo,
         searcInputVisible: state.searcInputVisible,
         form: state.form,
+        arrayArticulos: state.arrayArticulos,
         isLoad,
         handleGetArticulo,
         handleDoRegister,
@@ -145,6 +156,7 @@ const ArticuloState = (props) => {
         handleSetUpdate,
         buttonActionDelete,
         buttonActionDoCancel,
+        handleGetAllArticulos,
       }}
     >
       {props.children}
